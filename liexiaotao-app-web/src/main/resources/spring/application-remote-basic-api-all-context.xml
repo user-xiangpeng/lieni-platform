@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+        
+	<bean id="smsRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-all.remote.url}/smsRemoteService" />
+		<property name="serviceInterface" value="com.lieni.message.sms.remote.ISmsRemoteService" />
+	</bean>
+	
+	<bean id="messageRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-all.remote.url}/messageRemoteService" />
+		<property name="serviceInterface" value="com.lieni.message.inner.remote.IMessageRemoteService" />
+	</bean>
+	
+	<bean id="basedataRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-all.remote.url}/basedataRemoteService" />
+		<property name="serviceInterface" value="com.lieni.basedata.remote.IBasedataRemoteService" />
+	</bean>
+	
+	<bean id="holidayRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-all.remote.url}/holidayRemoteService" />
+		<property name="serviceInterface" value="com.lieni.basedata.remote.IHolidayRemoteService" />
+	</bean>
+	
+	<bean id="resumeFileRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-all.remote.url}/resumeFileRemoteService" />
+		<property name="serviceInterface" value="com.lieni.file.remote.IFileRemoteService" />
+	</bean>
+	
+	<bean id="degreeFileRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-all.remote.url}/degreeFileRemoteService" />
+		<property name="serviceInterface" value="com.lieni.file.remote.IFileRemoteService" />
+	</bean>
+	
+	<bean id="avatarImageRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-all.remote.url}/avatarImageRemoteService" />
+		<property name="serviceInterface" value="com.lieni.file.remote.IScaleImageRemoteService" />
+	</bean>
+	
+</beans>

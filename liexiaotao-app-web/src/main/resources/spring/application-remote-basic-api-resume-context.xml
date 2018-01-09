@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+        
+	<bean id="resumeAuthorizedRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-resume.remote.url}/resumeAuthorizedRemoteService" />
+		<property name="serviceInterface" value="com.lieni.resume.authorize.remote.IResumeAuthorizedRemoteService" />
+	</bean>
+	
+	<bean id="cvResumeInfoRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvResumeInfoRemoteService" />
+		<property name="serviceInterface" value="com.lieni.resume.cv.remote.ICvResumeInfoRemoteService" />
+	</bean>
+	
+	<bean id="cvResumeRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvResumeRemoteService" />
+		<property name="serviceInterface" value="com.lieni.resume.cv.remote.ICvResumeRemoteService" />
+	</bean>
+	
+	
+	<bean id="cvJobIntentionRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvJobIntentionRemoteService" />
+		<property name="serviceInterface" value="com.lieni.resume.cv.remote.ICvJobIntentionRemoteService" />
+	</bean>
+	
+	<bean id="cvEducationExperienceRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvEducationExperienceRemoteService" />
+		<property name="serviceInterface" value="com.lieni.resume.cv.remote.ICvEducationExperienceRemoteService" />
+	</bean>
+	
+	<bean id="cvWorkExperienceRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvWorkExperienceRemoteService" />
+		<property name="serviceInterface" value="com.lieni.resume.cv.remote.ICvWorkExperienceRemoteService" />
+	</bean>
+	
+	<bean id="cvProjectExperienceRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvProjectExperienceRemoteService" />
+		<property name="serviceInterface" value="com.lieni.resume.cv.remote.ICvProjectExperienceRemoteService" />
+	</bean>
+	
+	<bean id="supplierLowResumeInfoRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-resume.remote.url}/supplierLowResumeInfoRemoteService" />
+		<property name="serviceInterface" value="com.lieni.resume.low.remote.ISupplierLowResumeInfoRemoteService" />
+	</bean>
+	
+	<bean id="cvLanguageAbilityRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+	 	<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvLanguageAbilityRemoteService" />
+	    <property name="serviceInterface" value="com.lieni.resume.cv.remote.ICvLanguageAbilityRemoteService" />
+	</bean>
+	
+	<bean id="cvTrainingExperienceRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+	 	<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvTrainingExperienceRemoteService" />
+	    <property name="serviceInterface" value="com.lieni.resume.cv.remote.ICvTrainingExperienceRemoteService" />
+	</bean>
+	
+	<bean id="cvProductRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+	 	<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvProductRemoteService" />
+	    <property name="serviceInterface" value="com.lieni.resume.cv.remote.ICvProductRemoteService" />
+	</bean>
+	
+	<bean id="resumeBackgroundRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+	 	<property name="serviceUrl" value="${basic-api-resume.remote.url}/resumeBackgroundRemoteService" />
+	    <property name="serviceInterface" value="com.lieni.resume.remote.IResumeBackgroundRemoteService" />
+	</bean>
+	
+	<bean id="resumeEducationBackgroundRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+	 	<property name="serviceUrl" value="${basic-api-resume.remote.url}/resumeEducationBackgroundRemoteService" />
+	    <property name="serviceInterface" value="com.lieni.resume.remote.IResumeEducationBackgroundRemoteService" />
+	</bean>
+	
+	<bean id="resumeWorkBackgroundRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+	 	<property name="serviceUrl" value="${basic-api-resume.remote.url}/resumeWorkBackgroundRemoteService" />
+	    <property name="serviceInterface" value="com.lieni.resume.remote.IResumeWorkBackgroundRemoteService" />
+	</bean>
+	
+	<bean id="resumeWorkBgRespondentRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+	 	<property name="serviceUrl" value="${basic-api-resume.remote.url}/resumeWorkBgRespondentRemoteService" />
+	    <property name="serviceInterface" value="com.lieni.resume.remote.IResumeWorkBgRespondentRemoteService" />
+	</bean>
+	
+	<bean id="resumeRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+	 	<property name="serviceUrl" value="${basic-api-resume.remote.url}/resumeRemoteService" />
+	    <property name="serviceInterface" value="com.lieni.resume.remote.IResumeRemoteService" />
+	</bean>
+	
+	<bean id="resumeReportRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+	 	<property name="serviceUrl" value="${basic-api-resume.remote.url}/resumeReportRemoteService" />
+	    <property name="serviceInterface" value="com.lieni.resume.remote.IResumeReportRemoteService" />
+	</bean>
+	
+	<bean id="cvVersionResumeContentRemoteService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceUrl" value="${basic-api-resume.remote.url}/cvVersionResumeContentRemoteService" />
+		<property name="serviceInterface" value="com.lieni.resume.version.remote.ICvVersionResumeContentRemoteService" />
+	</bean>
+</beans>
