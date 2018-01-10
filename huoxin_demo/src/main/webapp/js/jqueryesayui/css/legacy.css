@@ -1,0 +1,578 @@
+TD, TH {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 100%;
+    font-size: 9pt;
+}
+
+FIELDSET {
+    border: 1px #ccc solid;
+    padding: 0;
+    margin: 0;
+}
+FIELDSET .buffer {
+    padding: 20px;
+}
+
+FIELDSET TEXTAREA.ta, FIELDSET INPUT.tf, TEXTAREA.ta, .tf {
+    width: 90%;
+    font-family: monospace;
+    font-size: 8pt;
+}
+FIELDSET LEGEND {
+    padding: 0;
+    margin: 0 10px 0 10px;
+}
+FIELDSET LEGEND SELECT {
+    font-size : 8pt; font-family : verdana, arial, helvetica, sans-serif;
+}
+
+
+
+/* --------------------------------------------- */
+/*  Logviewer tabs                               */
+/* --------------------------------------------- */
+
+#logviewer .jive-tabs TD {
+    font-family: verdana;
+    font-size: 8pt;
+}
+
+#logviewer .jive-tabs .jive-tab, .jive-tabs .jive-tab-active {
+    border: 1px #ccc solid;
+    white-space: nowrap;
+    padding: 4px 1em 4px 1em;
+    background-color: #ddd;
+}
+
+#logviewer .jive-tabs .jive-tab-active {
+    border-bottom: 1px #fff solid;
+    background-color: #fff;
+}
+
+#logviewer .jive-tabs .jive-spacer, .jive-tabs .jive-stretch {
+    border-bottom: 1px #ccc solid;
+}
+
+#logviewer .jive-tabs .jive-tab A, #logviewer .jive-tabs .jive-tab-active A {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+#logviewer .jive-tabs .jive-tab A:hover, #logviewer .jive-tabs .jive-tab-active A:hover {
+    text-decoration: underline;
+}
+
+
+/* --------------------------------------------- */
+/*  Breadcrumbs                                  */
+/* --------------------------------------------- */
+
+#jive-main #jive-breadcrumbs {
+    font-size: 8pt; /* font-weight : bold; */
+    font-family: verdana;
+    white-space: nowrap;
+    padding-top: 2px;
+}
+
+#jive-main #jive-breadcrumbs A {
+    color: #000;
+    text-decoration: none;
+}
+
+#jive-main #jive-breadcrumbs A:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+/* --------------------------------------------- */
+/*  Tasks                                        */
+/* --------------------------------------------- */
+
+#jive-runningtask {
+    margin-left: 1em;
+}
+
+/* --------------------------------------------- */
+/*  Older styles                                 */
+/* --------------------------------------------- */
+
+PRE, TT {
+    font-size: 9pt;
+    font-family: courier new, monospaced;
+}
+
+/* Messages - errors, success and info */
+.jive-error TABLE, .jive-info TABLE, .jive-success TABLE {
+    border: 1px #ccc solid;
+}
+
+.jive-error TD, .jive-info TD, .jive-success TD {
+    padding: 3px;
+    vertical-align: top;
+}
+
+.jive-error-text, .jive-error .jive-icon-label, .jive-error-text A, .jive-error .jive-icon-label A {
+    color: #f00;
+}
+
+.jive-success-text, .jive-success .jive-icon-label, .jive-success-text A, .jive-success .jive-icon-label A {
+    color: #090;
+}
+
+.jive-info-text, .jive-info .jive-icon-label, .jive-info-text A, .jive-info .jive-icon-label A {
+    color: #306;
+}
+
+/* tables */
+.jive-table {
+    border-color: #bbb;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+}
+
+.jive-table TH, .jive-table TD {
+    padding: 4px;
+}
+
+.jive-table TH {
+    background-color: #eee;
+    border-bottom: 1px #bbb solid;
+    text-align: left;
+    font-family: verdana;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.jive-table TR TD {
+    border-bottom: 1px #ccc solid;
+}
+
+.jive-table TD {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 9pt;
+}
+
+.jive-table .jive-odd TD {
+    background-color: #fff;
+}
+
+.jive-table .jive-even TD {
+    background-color: transparent;
+}
+
+.jive-table TFOOT TD {
+    background-color: #ddd;
+    font-family: verdana;
+    font-size: 8pt;
+    border-right: 1px #bbb solid;
+}
+
+.jive-table TD TD {
+    border-width: 0px;
+}
+
+.jive-table INPUT, .jive-table SELECT {
+    font-family: verdana;
+    font-size: 8pt;
+}
+
+.jive-description, .jive-description A, .jive-table .jive-date, .jive-description INPUT,
+    .jive-description SELECT {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+.jive-label {
+    background-color: #eee;
+    padding-right: 10px;
+    width: 1%;
+    white-space: nowrap;
+}
+
+.jive-buttons .jive-icon {
+    padding: 3px;
+}
+
+.jive-buttons .jive-icon-label {
+    padding: 3px;
+    white-space: nowrap;
+    padding-right: 1em;
+    font-size: 8pt;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.jive-select {
+    font-size: 8pt;
+    font-family: verdana, arial, helvetica, monospace;
+}
+
+SELECT .hilite {
+    font-weight: bold !important;
+    background-color: #eee !important;
+}
+
+/* --------------------------------------------- */
+/*  Calendar styles                              */
+/* --------------------------------------------- */
+
+TABLE.calBgColor {
+    padding: 0px;
+}
+
+td.cal {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #000000;
+    background-color: #fff;
+    padding: 0px;
+}
+
+select.month {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #000000;
+    background: transparent;
+    width: 85px;
+}
+
+input.year {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #000000;
+    background: transparent;
+    width: 30px;
+}
+
+td.calDaysColor {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+td.calWeekend {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #ffffff;
+    background-color: #d3d3d3;
+}
+
+td.calBgColor {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #ffffff;
+    background-color: #ffc;
+}
+
+.calBorderColor {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #ffffff;
+    background-color: #a9a9a9;
+}
+
+td.calHighlightColor {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #ffffff;
+    background-color: #ffffcc;
+}
+
+A.cal {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #000000;
+    background: transparent;
+    text-decoration: none;
+}
+
+A.cal:Hover {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #FF0000;
+    background: transparent;
+    text-decoration: none;
+}
+
+.calDisabled {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 11px;
+    color: #808080;
+    background: transparent;
+    text-decoration: none;
+}
+
+/* --------------------------------------------- */
+/*  Quote original styles                        */
+/* --------------------------------------------- */
+
+.jive-quoteheader {
+    font-weight: bold;
+    width: 90%;
+    margin-left: 15px;
+}
+
+.jive-quote {
+    border: #d1d7dc 1px solid; /* font-size : 11px; */
+    color: #444; /* line-height : 125%; */
+/* font-family : Verdana, Arial, Helvetica, sans-serif; */
+    background-color: #fafafa;
+    width: 90%;
+    margin-left: 15px;
+}
+
+/* --------------------------------------------- */
+/*  Moderation Messages                             */
+/* --------------------------------------------- */
+
+#jive-modpage .jive-info-message {
+    padding: 3px;
+}
+
+#jive-modpage .jive-mark-buttons INPUT, #jive-modpage .jive-mark-buttons SELECT, #jive-modpage .jive-jump-box SELECT {
+    font-size: 8pt;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+#jive-modpage .jive-mod-msg-row TD {
+    border-bottom: 1px #ccc solid;
+}
+
+#jive-modpage .jive-mod-msg-row-app TD {
+    border-bottom: 1px #999 solid;
+    background-color: #cfc;
+}
+
+#jive-modpage .jive-mod-msg-row-rej TD {
+    border-bottom: 1px #999 solid;
+    background-color: #fcc;
+}
+
+#jive-mod-forum-box TH, #jive-mod-forum-box TD {
+    font-size: 8pt;
+    font-family: verdana;
+}
+
+#jive-mod-forum-box {
+    margin-right: 8px;
+}
+
+#jive-mod-forum-box TABLE {
+    border: 1px #ccc solid;
+}
+
+#jive-mod-forum-box TH {
+    text-align: left;
+    font-weight: bold;
+    background-color: #eee;
+    border-bottom: 1px #ccc solid;
+}
+
+#jive-mod-forum-box .jive-mod-forum-all TD {
+    border-top: 1px #ccc solid;
+}
+
+#jive-mod-forum-box LABEL, #jive-mod-forum-box INPUT, #jive-mod-forum-box SELECT {
+    font-size: 8pt;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+/*----- Wizard Styles -----*/
+
+.jive-controlbuttons {
+    text-align: right;
+    border: 1px #ccc solid;
+    background-color: #eee;
+    padding: 6px;
+    -moz-border-radius: 3px;
+}
+
+/*----- Errors, success, info -----*/
+
+.jive-error-box {
+    border: 1px #f00 solid;
+    background-color: #fee;
+    -moz-border-radius: 3px;
+    padding: 6px;
+    margin-bottom: 1em;
+    padding-left: 30px;
+    background-image: url( "../images/error-16x16.gif" );
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+}
+
+.jive-info-box {
+    border: 1px #00f solid;
+    background-color: #eef;
+    -moz-border-radius: 3px;
+    padding: 6px;
+    margin-bottom: 1em;
+    padding-left: 30px;
+    background-image: url( "../images/info-16x16.gif" );
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+}
+
+.jive-success-box {
+    border: 1px #0f0 solid;
+    background-color: #efe;
+    -moz-border-radius: 3px;
+    padding: 6px;
+    margin-bottom: 1em;
+    padding-left: 30px;
+    background-image: url( "../images/success-16x16.gif" );
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+}
+
+/* table form (used by wizard) */
+.jive-table-form TD {
+    padding: 3px;
+}
+
+.jive-table-form INPUT, .jive-table-form TEXTAREA {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+.jive-option-table THEAD TH {
+    font-size: 8pt;
+    font-family: verdana, arial, helvetica, sans-serif;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 1px #ccc solid;
+}
+
+.jive-option-table .jive-option-button {
+    font-size: 8pt;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.jive-table .center {
+    text-align: center;
+}
+
+.jive-table .jive-empty {
+    padding: 1em;
+}
+
+FIELDSET DIV.jive-padding {
+    padding: 6px;
+}
+FIELDSET DIV.jive-controlbuttons-new {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #dadada;
+    }
+FIELDSET DIV.jive-controlbuttons-new div {
+    width: 100%;
+    float: left;
+    display: block;
+}
+FIELDSET DIV.jive-controlbuttons-new input {
+    margin-left: 15px;
+}
+
+
+
+.jive-token-list {
+    padding : 0;
+    margin : 0;
+    list-style-type : none;
+}
+.jive-token-list LI {
+    display : inline;
+    padding-right : 0.5em;
+}
+.jive-token-list LI TT {
+    font-family : monospace;
+    font-size : 8pt;
+    color : #666;
+}
+
+.jtabs {
+    padding : 0;
+    margin : 0;
+    list-style : none;
+    border-bottom : 1px #ccc solid;
+}
+.jtabs LI {
+    display : inline;
+    padding : 3px 6px 0px 6px;
+    margin : 0px 6px 0px 6px;
+    border : 1px #ccc solid;
+    background-color : #eee;
+}
+.jtabs LI.selected {
+    background-color : #fff;
+    border-bottom : 1px #fff solid;
+}
+.jtabs LI A {
+    text-decoration : none;
+    color : #000;
+}
+.jtabs LI.selected A {
+    font-weight : bold;
+}
+.inline-list {
+    padding : 0;
+    margin : 0;
+    list-style : none;
+}
+.inline-list LI {
+    display : inline;
+    border-right : 10px;
+}
+
+/* --------------------------------------------- */
+/*  Paginators                                   */
+/* --------------------------------------------- */
+
+.jive-paginator, .jive-paginator A {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size : 10pt;
+}
+.jive-paginator, .jive-paginator A {
+    font-weight : bold;
+}
+.jive-paginator A {
+    text-decoration : none;
+    border : 1px #fff solid;
+}
+.jive-paginator A:hover {
+    border : 1px #ccc solid;
+    color : #000;
+    background-color : #ffc;
+    text-decoration : none;
+}
+.jive-paginator .jive-current {
+    color : #000;
+    background-color : #eee;
+    border : 1px #ccc solid;
+    text-decoration : none;
+}
+
+/*-- --------------------------------------------- --*/
+/*--  Webwork styles                               --*/
+/*-- --------------------------------------------- --*/
+
+.errorLabel {
+    color : #F00;
+    font-weight:bold;
+}
+.errorMessage {
+    color : #F00;
+    font-weight:bold;
+}
+.checkboxErrorLabel {
+    color : #F00;
+}
+.required {
+    color : #F00;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- user必须指向Dao接口 -->
+<mapper namespace="com.service.manager.repository.mybatis.UserDao">
+	<!--通用表字段列表 -->
+	<resultMap id="User" type="com.service.manager.entity.User">
+		<result column="ID" property="id" jdbcType="INTEGER" />
+		<result column="USER_NAME" property="userName" jdbcType="VARCHAR" />
+		<result column="PASS_WORD" property="passWord" jdbcType="INTEGER" />
+		<result column="EMAIL" property="eMail" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="userList">
+		ID
+		,USERNAME
+		,PASSWORD
+		,EMAIL
+	</sql>
+
+
+	<select id="getAuthorityList" parameterType="map" resultMap="User">
+		SELECT
+		<include refid="userList" />
+		from user
+	</select>
+
+
+	<select id="getAuthorityList_int" parameterType="int" resultMap="User">
+		SELECT
+		<include refid="userList" />
+		from user
+		where
+		id=#{id}
+	</select>
+
+   <update id="updateWeight" parameterType="map">
+        update user set userName = #{userName},passWord = #{passWord} where id = #{id}
+    </update>
+
+
+</mapper>
