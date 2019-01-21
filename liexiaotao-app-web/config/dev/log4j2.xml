@@ -46,6 +46,7 @@
         <AsyncLogger name="java.sql" level="INFO" additivity="false" includeLocation="true">
         	<AppenderRef ref="${appenderRef}" />
         </AsyncLogger>
+        
     </Loggers>
     
 </Configuration>
